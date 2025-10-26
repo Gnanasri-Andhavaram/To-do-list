@@ -1,0 +1,111 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #0f172a, #081b2e);
+  color: #e6eef8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  background: #0b1220;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input[type="text"],
+.task-input input[type="date"],
+.task-input input[type="time"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #081b2e;
+  color: #fff;
+}
+
+.task-input button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  border-bottom: 2px solid #444;
+  font-weight: 600;
+}
+
+tr.task-row {
+  border-bottom: 1px solid #222;
+}
+
+tr.task-row td {
+  vertical-align: middle;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #00ff00;
+  font-weight: 500;
+}
+
+.incomplete {
+  color: #ff5555;
+  font-weight: 500;
+}
+
+.status-btn {
+  cursor: pointer;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.complete-btn {
+  background-color: green;
+}
+
+.incomplete-btn {
+  background-color: red;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ff5555;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}

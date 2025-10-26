@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminder & To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reminder & To-Do List</h1>
+
+    <div class="task-input">
+      <input type="text" id="taskText" placeholder="Enter your task...">
+      <input type="date" id="taskDate">
+      <input type="time" id="taskTime">
+      <button id="addTaskBtn">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody">
+        <!-- Tasks will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
